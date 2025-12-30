@@ -1,11 +1,11 @@
-node_modules
+node_modules/
 
 # Output
 .output
-.vercel
-.netlify
-.wrangler
-/.svelte-kit
+.vercel/
+.netlify/
+.wrangler/
+.svelte-kit/
 /build
 
 # OS
@@ -21,3 +21,8 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Lock files (optional - uncomment if using different package manager)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
