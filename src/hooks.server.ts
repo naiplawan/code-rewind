@@ -1,4 +1,8 @@
 import type { Handle } from '@sveltejs/kit';
+import { validateEnv, logOAuthEvent } from '$lib/server/env';
+
+// Validate environment variables at startup
+validateEnv();
 
 export const handle: Handle = async ({ event, resolve }) => {
 	const response = await resolve(event);
